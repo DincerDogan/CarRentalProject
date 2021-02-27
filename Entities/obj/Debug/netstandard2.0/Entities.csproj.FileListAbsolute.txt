@@ -1,0 +1,9 @@
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\bin\Debug\netstandard2.0\Entities.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\bin\Debug\netstandard2.0\Entities.pdb
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\obj\Debug\netstandard2.0\Entities.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Entities\obj\Debug\netstandard2.0\Entities.pdb

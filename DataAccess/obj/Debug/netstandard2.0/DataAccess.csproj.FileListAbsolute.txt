@@ -1,0 +1,12 @@
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
