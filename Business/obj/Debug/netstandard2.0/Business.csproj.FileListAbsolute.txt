@@ -12,3 +12,5 @@ D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Business\obj\Debug
 D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
 D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Business\obj\Debug\netstandard2.0\Business.dll
 D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Business\obj\Debug\netstandard2.0\Business.pdb
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Business\bin\Debug\netstandard2.0\Core.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\Business\bin\Debug\netstandard2.0\Core.pdb

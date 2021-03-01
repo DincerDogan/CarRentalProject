@@ -20,6 +20,14 @@ namespace ConsoleUI
             BrandManager brandManager = new BrandManager(new EfBrandDal());
             ColorManager colorManager = new ColorManager(new EfColorDal());
 
+
+
+
+            //foreach (var car in carManager.GetCarDetails())
+            //{
+            //    Console.WriteLine(String.Format("{0,-5 }{1,-30}{2,-15}{3,-10}{4,-8}" , car.CarId ,car.CarName,car.BrandName,car.ColorName,car.DailyPrice));
+            //}
+
             do
             {
                 Console.Clear();
@@ -44,6 +52,10 @@ namespace ConsoleUI
                 switch (_secim)
                 {
                     case 1:
+                        ListToBrands(brandManager);
+                        Console.WriteLine();
+                        ListToColors(colorManager);
+                        Console.WriteLine();
                         AddToCar(carManager);
                         Console.Write("\nMenüye dönmek için ENTER tuşuna basınız....");
                         Console.ReadLine();
@@ -250,15 +262,21 @@ namespace ConsoleUI
 
         private static void ListToCars(CarManager carManager)
         {
-            Console.WriteLine("---------------------------------------------------------------------------------------------");
-            Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", "ID", "BRAND ID", "COLOR ID", "MODEL YEAR", "DAILY PRICE", "DESCRIPTION"));
-            Console.WriteLine("---------------------------------------------------------------------------------------------");
+            Console.WriteLine("------------------------------------------------------------------------------------------------");
+            Console.WriteLine(String.Format("| {0,-5 }| {1,-30}| {2,-20}| {3,-15}| {4,-15}|", "ID", "CAR NAME", "BRAND NAME", "CAR COLOR", "DAILY PRICE"));
+            Console.WriteLine("------------------------------------------------------------------------------------------------");
 
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetCarDetails())
             {
-                Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", car.Id, car.BrandId, car.ColorId, car.ModelYear, car.DailyPrice, car.Description));
+                Console.WriteLine(String.Format("| {0,-5 }| {1,-30}| {2,-20}| {3,-15}| {4,-15}|", car.CarId, car.CarName, car.BrandName, car.ColorName, car.DailyPrice));
             }
-            Console.WriteLine("---------------------------------------------------------------------------------------------");
+
+            //foreach (var car in carManager.GetAll())
+            //{
+            //    Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", car.Id, car.BrandId, car.ColorId, car.ModelYear, car.DailyPrice, car.Description));
+            //}
+
+            Console.WriteLine("------------------------------------------------------------------------------------------------");
         }
 
         private static void UpdateToCar(CarManager carManager)
