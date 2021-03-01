@@ -20,14 +20,6 @@ namespace ConsoleUI
             BrandManager brandManager = new BrandManager(new EfBrandDal());
             ColorManager colorManager = new ColorManager(new EfColorDal());
 
-
-
-
-            //foreach (var car in carManager.GetCarDetails())
-            //{
-            //    Console.WriteLine(String.Format("{0,-5 }{1,-30}{2,-15}{3,-10}{4,-8}" , car.CarId ,car.CarName,car.BrandName,car.ColorName,car.DailyPrice));
-            //}
-
             do
             {
                 Console.Clear();
@@ -270,12 +262,6 @@ namespace ConsoleUI
             {
                 Console.WriteLine(String.Format("| {0,-5 }| {1,-30}| {2,-20}| {3,-15}| {4,-15}|", car.CarId, car.CarName, car.BrandName, car.ColorName, car.DailyPrice));
             }
-
-            //foreach (var car in carManager.GetAll())
-            //{
-            //    Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", car.Id, car.BrandId, car.ColorId, car.ModelYear, car.DailyPrice, car.Description));
-            //}
-
             Console.WriteLine("------------------------------------------------------------------------------------------------");
         }
 
