@@ -40,6 +40,7 @@ namespace ConsoleUI
 
                 Console.Write("\nSeciminiz: ");
                 _secim = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
 
                 switch (_secim)
                 {
@@ -122,7 +123,9 @@ namespace ConsoleUI
                 ColorName = _colorName
             };
 
-            colorManager.Add(color);
+            var result = colorManager.Add(color);
+            Console.WriteLine(result.Message);
+            
         }
 
         private static void AddToBrand(BrandManager brandManager)
@@ -148,7 +151,7 @@ namespace ConsoleUI
             Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", "ID", "BRAND ID", "COLOR ID", "MODEL YEAR", "DAILY PRICE", "DESCRIPTION"));
             Console.WriteLine("---------------------------------------------------------------------------------------------");
 
-            foreach (var car in carManager.GetCarsByColorId(listColorId))
+            foreach (var car in carManager.GetCarsByColorId(listColorId).Data)
             {
                 Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", car.Id, car.BrandId, car.ColorId, car.ModelYear, car.DailyPrice, car.Description));
             }
@@ -164,7 +167,7 @@ namespace ConsoleUI
             Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", "ID", "BRAND ID", "COLOR ID", "MODEL YEAR", "DAILY PRICE", "DESCRIPTION"));
             Console.WriteLine("---------------------------------------------------------------------------------------------");
 
-            foreach (var car in carManager.GetCarsByBrandId(listBrandId))
+            foreach (var car in carManager.GetCarsByBrandId(listBrandId).Data)
             {
                 Console.WriteLine(String.Format("| {0,-5}| {1,-10}| {2,-10}| {3,-10}| {4,-15}| {5,-30}|", car.Id, car.BrandId, car.ColorId, car.ModelYear, car.DailyPrice, car.Description));
             }
@@ -173,11 +176,13 @@ namespace ConsoleUI
 
         private static void ListToColors(ColorManager colorManager)
         {
+            var result = colorManager.GetAll();
+            Console.WriteLine(result.Message);
             Console.WriteLine("-------------------------");
             Console.WriteLine(String.Format("| {0,-5}| {1,-15}|", "ID", "RENK"));
             Console.WriteLine("-------------------------");
 
-            foreach (var colors in colorManager.GetAll())
+            foreach (var colors in result.Data)
             {
                 Console.WriteLine(String.Format("| {0,-5}| {1,-15}|", colors.Id, colors.ColorName));
             }
@@ -186,11 +191,14 @@ namespace ConsoleUI
 
         private static void ListToBrands(BrandManager brandManager)
         {
+            var result = brandManager.GetAll();
+            Console.WriteLine(result.Message);
+
             Console.WriteLine("-------------------------");
             Console.WriteLine(String.Format("| {0,-5}| {1,-15}|", "ID", "MARKA"));
-            Console.WriteLine("-------------------------");
+            Console.WriteLine("-------------------------");                        
 
-            foreach (var brands in brandManager.GetAll())
+            foreach (var brands in result.Data)
             {
                 Console.WriteLine(String.Format("| {0,-5}| {1,-15}|", brands.Id, brands.BrandName));
             }
@@ -247,22 +255,28 @@ namespace ConsoleUI
                 Description = _description
             };
 
-            carManager.Add(car);
+            //carManager.Add(car);
+            var result = carManager.Add(car);
+            Console.WriteLine(result.Message);
+
             Console.WriteLine();
             ListToCars(carManager);
         }
 
         private static void ListToCars(CarManager carManager)
         {
+            var result = carManager.GetCarDetails();
+            Console.WriteLine(result.Message);
+
             Console.WriteLine("------------------------------------------------------------------------------------------------");
             Console.WriteLine(String.Format("| {0,-5 }| {1,-30}| {2,-20}| {3,-15}| {4,-15}|", "ID", "CAR NAME", "BRAND NAME", "CAR COLOR", "DAILY PRICE"));
-            Console.WriteLine("------------------------------------------------------------------------------------------------");
+            Console.WriteLine("------------------------------------------------------------------------------------------------");  
 
-            foreach (var car in carManager.GetCarDetails())
+            foreach (var car in result.Data)
             {
                 Console.WriteLine(String.Format("| {0,-5 }| {1,-30}| {2,-20}| {3,-15}| {4,-15}|", car.CarId, car.CarName, car.BrandName, car.ColorName, car.DailyPrice));
             }
-            Console.WriteLine("------------------------------------------------------------------------------------------------");
+            Console.WriteLine("------------------------------------------------------------------------------------------------");            
         }
 
         private static void UpdateToCar(CarManager carManager)
@@ -295,7 +309,7 @@ namespace ConsoleUI
 
             carManager.Update(updateCar);
             
-            Console.WriteLine("\n>>>> Son liste <<<<");
+            Console.WriteLine("\n<<< Listenin Son Hali >>>");
             ListToCars(carManager);
         }
     }
