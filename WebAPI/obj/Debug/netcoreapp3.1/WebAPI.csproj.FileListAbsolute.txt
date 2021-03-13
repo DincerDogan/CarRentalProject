@@ -66,3 +66,8 @@ D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\n
 D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\netcoreapp3.1\DataAccess.pdb
 D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\netcoreapp3.1\Entities.pdb
 D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyComplete
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\#Projeler\EnginDemirog_youtube\Kodlama.io\CarRentalProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
